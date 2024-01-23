@@ -27,6 +27,7 @@ if plot:
                                 width=1200, height=700, hover_name='District')
         st.plotly_chart(fig, use_container_width=True)
 
+
     else:
 
         state_df = df[df['State'] == selected_state]
@@ -36,7 +37,7 @@ if plot:
                                 width=1200, height=700, hover_name='District')
         st.plotly_chart(fig, use_container_width=True)
 
-st.title('State Stats')
+        st.title('State Stats')
 
         col1, col2 = st.columns(2)
 
@@ -78,6 +79,13 @@ st.title('State Stats')
 
             fig = px.bar(state_df, y='District', x=secondary, text_auto=True, orientation='h')
             st.plotly_chart(fig,use_container_width=True)
+
+
+
+
+
+
+
 
 
 
